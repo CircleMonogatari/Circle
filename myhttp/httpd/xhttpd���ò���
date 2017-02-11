@@ -1,0 +1,12 @@
+service xhttpd
+{
+	socket_type = stream
+	protocol    = tcp
+	wait        = no
+	user        = nobody
+	server      = /home/itheima/myhttp/httpd/
+	server_args = /home/itheima/myhttp/dir/
+	disable     = no
+	flags       = IPv4
+}
+
